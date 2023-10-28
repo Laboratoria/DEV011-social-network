@@ -1,6 +1,33 @@
-// aqui exportaras las funciones que necesites
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAuth, onAuthStateChanged} from "firebase/auth";
+import { getAnalytics } from "firebase/analytics";
 
-export const myFunction = () => {
-  // aqui tu codigo
-  console.log('Hola mundo!');
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyD48lDcsB70vmPGDuT-mqo5QBhaXNP7b5k",
+  authDomain: "yummy-4934a.firebaseapp.com",
+  projectId: "yummy-4934a",
+  storageBucket: "yummy-4934a.appspot.com",
+  messagingSenderId: "140040877244",
+  appId: "1:140040877244:web:278cfabc7731bc63f18cb9",
+  measurementId: "G-BERPZQCZPD"
 };
+
+// Initialize Firebase
+const firebaseApp = initializeApp(firebaseConfig);
+const analytics = getAnalytics(firebaseApp);
+const auth = getAuth(firebaseApp);
+console.log (analytics);
+
+onAuthStateChanged (auth, user => {
+if (user !== null){
+    console.log("Entraste");
+} else {
+    console.log("No entraste");
+}
+});
