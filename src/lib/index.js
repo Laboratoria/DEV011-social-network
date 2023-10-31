@@ -1,7 +1,11 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAuth, onAuthStateChanged} from "firebase/auth";
-import { getAnalytics } from "firebase/analytics";
+import { firebase } from 'firebase/app';
+import { initializeApp } from 'firebase/app';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+// import { getAnalytics } from 'firebase/analytics';
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
+// Follow this pattern to import other Firebase services
+// import { } from 'firebase/<service>';
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -19,15 +23,14 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const firebaseApp = initializeApp(firebaseConfig);
-const analytics = getAnalytics(firebaseApp);
-const auth = getAuth(firebaseApp);
-console.log (analytics);
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const auth = getAuth(app);
 
-onAuthStateChanged (auth, user => {
-if (user !== null){
-    console.log("Entraste");
-} else {
-    console.log("No entraste");
-}
-});
+// Usuario loggeado*
+// onAuthStateChanged (auth, user => {
+//     console.log("Entraste");
+// } else {
+//     console.log("No entraste");
+// }
+// });
