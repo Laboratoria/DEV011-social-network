@@ -3,11 +3,13 @@
 import home from './home.js';
 import login from './login.js';
 import error from './error.js';
+import register from './register.js';
 
 const routes = [
     { path: '/', component: home },
     { path: '/login', component: login },
     { path: '/error', component: error },
+    { path: '/register', component: register },
 ];
 
 const defaultRoute = '/';
@@ -15,8 +17,8 @@ const root = document.getElementById('root');
 
 function navigateTo(hash) {
     const route = routes.find((routeFound) => routeFound.path === hash);
-    console.log('route',route);
-    console.log('route.component',route.component);
+    console.log('route', route);
+    console.log('route.component', route.component);
     if (route && route.component) {
         window.history.pushState(
             {},
@@ -31,6 +33,11 @@ function navigateTo(hash) {
         navigateTo('/error');
     }
 }
+
+function returnHome() {
+    navigateTo('/');
+}
+
 window.onpopstate = () => {
     navigateTo(window.location.pathname);
 };
