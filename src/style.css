@@ -10,7 +10,7 @@ body{
     height: 400px;
     flex-direction: column;
     flex: 1;
-    padding bottom: 0%;
+    padding-bottom: 0%;
 }
 .formHome{
     display: flex;
@@ -29,7 +29,7 @@ body{
     align-items: center;
 
     background-size: contain;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     border-color: blue;
     margin-bottom: 0%;
 }

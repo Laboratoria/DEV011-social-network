@@ -14,7 +14,7 @@ function home(navigateTo) {
     sectionForm.classList.add('formHome');
     divLogo.classList.add('logo');
 
-    const Logo=`<img id='imgLogo' src=img/Logo.png width="200px" heigth="200px">`;
+    const Logo=`<img id='imgLogo' src=img/Logo.png width='200px' heigth='200px'>`;
     divLogo.innerHTML=Logo;
     buttonLogin.textContent = 'Iniciar sesión';
     buttonGoogle.textContent = 'Iniciar sesión con Google';
