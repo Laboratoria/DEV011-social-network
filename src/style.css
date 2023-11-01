@@ -1,0 +1,38 @@
+body{
+    background-color:black;
+    
+}
+.homeRebozo{
+    display: flex;
+    background-color: aquamarine;
+    align-content: center;
+    justify-content: center;
+    height: 400px;
+    flex-direction: column;
+    flex: 1;
+    padding-bottom: 0%;
+}
+.formHome{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 400px;
+    flex-direction: column;
+    width: auto;
+    background-color: blueviolet;
+    gap: 10px;
+    flex: 1;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: contain;
+    /* border-radius: 50%; */
+    border-color: blue;
+    margin-bottom: 0%;
+}
+img{
+    margin:40px, 20px,0px,20px;
+}
