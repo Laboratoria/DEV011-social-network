@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+/*HOME*/
+ /*cambie la posición*/
+ /* .image2 {
+    width: 63%; */
+    /* position: fixed; */
+    /* top: -23em;
+    left: -17em;
+    margin: 7em 7em 1em 77em ;
+  } */
+  
+  .image2 {
+    max-width: 45%; /* La imagen no será más ancha que su contenedor */
+    height: auto; /* La altura se ajustará proporcionalmente al ancho */
+    margin: -50em 7em -10em 52em;
+  }
+  .returnbtn:hover {
+    background: #DFC3B5;
+  }
+  /*cambie el tamaño de la letra 30/10*/
+  .postitle{
+    color: #333333;
+    font-size: 3.2em;
+   margin-top: 4%;
+   margin-bottom: 6%;
+   margin: 1em 3em 1em 7em;
+  }
+  .post-container {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    background-color: #f7edc9;
+    padding: 50px;
+    border-radius: 9px;
+    border: 2px solid #747373;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: -3em 3em 5em 25em ;
+  }
+  /*estilo input post*/
+  .post-title {
+    display: flex;
+    align-items: center;
+    width: 190%;
+    padding: 30px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .post-button {
+    padding: 8px 16px;
+    background-color: #D1C7EA;
+    border: 1.5px solid #000000;
+    color: #131212;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  .post-button:hover {
+    background-color: #bb3c0ea0;
+  }
+  .post-edit {
+    padding: 6px 14px;
+    background-color: #bb3c0ea0;
+    border: 1.5px solid #000000;
+    color: #131212;
+    border-radius: 4px;
+    margin: -5.5em 1em 1em 1em;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  } 
+  .post-edit:hover {
+    background-color: #D1C7EA;
+  }
+   .buttonexit {
+    padding: 16px 40px;
+    background-color: #FAC8BE;
+    border: 2px solid #000000;
+    color: #131212;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 22px;
+    transition: background-color 0.2s;
+    margin-left: 2%;
+    
+  }
+  .buttonexit:hover {
+    background-color: #bb3c0ea0;
+  }
+  /* Estilos para el contenedor de la publicación */
+  .post-container-inner {
+    position: relative; 
+  }
+  /* Estilos para el icono de eliminar */
+  .delete{
+    position: relative;
+    width: 7%;
+    bottom: -3px; /* Cambiado de "top" a "bottom" para moverlo a la parte inferior */
+    right: -20%; /*Ajusta la posición horizontal según tu preferencia */
+    /* margin: 7em -5em 1em 1em; */
+  }
+  /* Estilos para el icono de like */
+  .like-icon {
+    position: relative;
+    width: 7%;
+    bottom: -55px;
+    right: -14%;
+  }
+  .post-title{
+    background-color: #f2f5f4;
+  }
+  .post-container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    /* margin: 70px auto; */
+    background-color: #F7EBBB;
+    padding: 50px;
+    border-radius: 9px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0.8em 2em 4em 25em ;
+  }
+
+  .post-section .post-container-in:nth-child(5n+4) .post-container1 {
+    background-color: #efc8a4; /* Primer color */
+  }
+  
+  .post-section .post-container-in:nth-child(5n+2) .post-container1 {
+    background-color: #f0dac6; /* Segundo color */
+  }
+  
+  .post-section .post-container-in:nth-child(5n+3) .post-container1 {
+    background-color: #E7E5D9; /* Tercer color */
+  }
+  
+  .post-section .post-container-in:nth-child(5n+1) .post-container1 {
+    background-color: #c8d9db; /* Cuarto color */
+  }
+  
+  .post-section .post-container-in:nth-child(5n+5) .post-container1 {
+    background-color: #bec0a3; /* Quinto color */
+  }
+  
+  

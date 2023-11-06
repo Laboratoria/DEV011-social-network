@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+body {
+  background-image: url('img/Mujer -Space_-4.png'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta de tu imagen*/
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 85%; /*tamaño punta cafe   */
+ }
+.flex {
+  display: flex;
+  align-items: center;
+}
+.container {
+  padding: 0 15px;
+  min-height: 100vh;
+  justify-content: center;
+}
+.mujeres-page {
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
+.mujeres-page h1 {
+  color: #000000;
+  font-size: 5rem;
+  margin-bottom: 6px;
+  text-align: left;
+}
+.mujeres-page p {
+  font-size: 1.5rem;
+  white-space: nowrap;
+  text-align: center;
+}
+.title2{
+    margin: 0em 4em 1em 6em;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.slogan{
+    margin: -1em 2em 15em -2em;
+}
+.image1 {
+  max-width: 140%; /* La imagen no será más ancha que su contenedor */
+  height: auto; /* La altura se ajustará proporcionalmente al ancho */
+  margin: -50em 5em -11em -15em;
+  /* width: 140%; */
+}
+.image3{
+  max-width: 55%; /* La imagen no será más ancha que su contenedor */
+  height: auto; /* La altura se ajustará proporcionalmente al ancho */
+  margin: -50em 8em 22em -12.5em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(216, 151, 240, 0.1), 0 8px 16px rgba(243, 65, 234, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+form input {
+  height: 55px;
+  width: 100%;
+  border: 1px solid #CD9B81;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  font-size: 1rem;
+  padding: 0 14px;
+}
+
+.login {
+  /* border: none; */
+  outline: none;
+  cursor: pointer;
+  background: #CD9B81;
+  padding: 15px 0;
+  border-radius: 6px;
+  border: 2px solid #000000;
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+.login:hover {
+  background: #F4EFFD;
+  border: 1.5px solid #0B0B0A;
+}
+ .google-button {
+  position: relative;
+}
+
+  .google {
+    position: flex;
+    left: 50%; /* Centra el elemento horizontalmente */
+    top: 50%; /* Centra el elemento verticalmente */
+    transform: translate(70%, -120%); /* Centra el elemento precisamente */
+    width: 11%; /* Ajusta el ancho en porcentaje */
+    max-width: 200px; /* Establece un límite máximo de ancho */
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.or{
+  margin: 0.3em 4em 0.3em 7em;
+    font-size: 1.5rem;
+}
+.newac {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 11px 11px;
+  size: 5%;
+  background: #fff;
+  border-radius: 6px;
+  border: 2px solid #CD9B81;
+  color: #0F0D0D;
+  font-size: 1.2em;
+  font-weight: 400;
+  transition: 0.2s ease;
+}
+.newac:hover {
+  background: #CD9B81;
+}
+ /*REGISTER*/
+/*boton para retroceder*/
+.returnbtn {
+  padding: 11px 11px;
+  size: 5%;
+  background: #fff;
+  border-radius: 6px;
+  border: 2px solid #0A0A0A;
+  color: #0F0D0D;
+  font-size: 1.2em;
+  transition: 0.2s ease;
+  position: fixed;
+  margin-top: -5%;
+  /* margin-left: -5%; */
+}
+ 
+.footer {
+  margin-top: 50px;
+  width: 100%;
+  padding: 15px 20%;
+  justify-content: center;
+  background: #fbf9f9;
+  color: #100a0a;
+  display:flex;
+  border-radius: 3px;
+  border-top-style: inset;
+  border-color: #ffd791;
+  border-width: 5px;
+}
+/*----------RESPONSIVE----------------*/
+
+ /* @media (max-width: 900px) {
+  .mujeres-page {
+    flex-direction: column;
+    text-align: center;
+  }
+  .mujeres-page .text {
+    margin-bottom: 30px;
+  }
+  .image1 {
+    display: relative;
+    max-width: 120%; 
+    height: auto; 
+     margin: -50em 5em -12em -15em;
+  }
+}  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*login*/
+  .title1{
+    margin: -8em 1em 20em 5em;
+  }
+    .slogan{
+      margin: -1em 2em 18em 8em;
+      font-size: 3rem;
+  }
+  .title2{
+    margin: 0em 4em 1em 10em;
+    font-size: 2.5rem;
+    text-align: center;
+}
+  .image1 {
+    max-width: 80%; 
+    height: auto; 
+    margin: -48em 6em -1em 8em;
+    /* width: 140%; */
+  }
+  .contenido{
+    margin: -6em 6em -12em -45em;
+}
+/* -------register----------*/
+.returnbtn {
+  padding: 6px 6px; /* Reducir el padding aún más */
+  font-size: 0.8em; /* Reducir el tamaño de fuente aún más */
+  left:53% ;
+}
+.allRegister{
+  margin: -6em 6em -12em -45em;
+  
+}
+/*---------home---------------*/
+
+.postitle{
+  text-align: center;
+  margin: 1em 1em 1em 7em;
+}
+.image2{
+  max-width: 44%;
+  height: auto;
+  margin: -46em 10em -1em 42em;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1180px) { 
+  .container {
+    margin: 10em 0em -7em -23em;
+  }
+  .image1 {
+    max-width: 60%; 
+    height: auto; 
+    margin: -48em 6em -1em 18em;
+  }
+  }
+
+
+
